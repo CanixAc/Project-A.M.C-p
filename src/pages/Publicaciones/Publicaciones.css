@@ -1,0 +1,52 @@
+.publicaciones-container {
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.acceso-denegado {
+    text-align: center;
+    margin-top: 100px;
+    color: #55006e;
+}
+
+.acceso-denegado h2 {
+    font-size: 2rem;
+}
+
+.links-acceso {
+    margin-top: 20px;
+}
+
+.link-auth {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #55006e;
+    text-decoration: none;
+}
+
+.link-auth:hover {
+    text-decoration: underline;
+}
+
+.btn-cerrar {
+    background-color: #55006e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+
+.btn-cerrar:hover {
+    background-color: #3e0050;
+}
+
+.post-card {
+    border: 1px solid #55006e;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+    clear: both; /* Para que no choque con el botón de float right */
+}

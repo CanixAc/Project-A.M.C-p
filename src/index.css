@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .main-wrap .main-head {
+        width: 60px;
+    }
+    
+    .main-wrap .main-head.active,
+    .main-wrap .main-head:hover {
+        width: 200px;
+    }
+    
+    .main-wrap .showcase {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+        padding: 15px;
+    }
+    
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .main-wrap .showcase .content {
+        padding: 30px 10px;
+    }
+    
+    .main-wrap .showcase .content h3 {
+        font-size: 30px;
+    }
+}

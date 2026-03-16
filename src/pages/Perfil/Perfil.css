@@ -1,0 +1,42 @@
+.perfil-section {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 15px;
+}
+
+.perfil-section h2 {
+    margin: 0;
+}
+
+.perfil-section img {
+    width: 100px;
+    height: 100px;
+}
+
+.editar-perfil-button {
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: black;
+    color: #55006e;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.perfil-container button {
+    margin-left: 605px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #55006e;
+    color: black;
+    font-weight: bold;
+}
