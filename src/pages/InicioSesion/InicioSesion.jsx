@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './InicioSesion.css';
+import { Alerta_Bien, Alerta_Mal} from '../../components/Alertas/Alertas_Sesion/Inicio_Sesion';
 
 const LoginPage = () => {
   const [identificador, setIdentificador] = useState('');
   const [contrasena, setContrasena] = useState('');
   const navigate = useNavigate();
 
- const handleSubmit = (e) => {
+ const handleSubmit = async (e) => {
   e.preventDefault();
   const usuarioGuardado = JSON.parse(localStorage.getItem('usuarioRegistrado'));
 
@@ -20,10 +21,10 @@ const LoginPage = () => {
     // 👇 FORZAR ACTUALIZACIÓN DE NAVBAR
     window.dispatchEvent(new Event('storage'));
 
-    alert("¡Iniciaste sesión con éxito!");
-    navigate('/');
+    await Alerta_Bien();
+    navigate('/Perfil');
   } else {
-    alert("Datos incorrectos");
+    Alerta_Mal();
   }
 };
   return (
