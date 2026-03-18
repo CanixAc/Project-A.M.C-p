@@ -21,12 +21,13 @@ const HomePage = () => {
         </div>
       </section>
           <div className="perfil-container">
-            <button className="ver-publicaciones">Ver tus publicaciones</button>
+          <Link to="/mis-publicaciones" className="ver-publicaciones-link">
+        <button className="ver-publicaciones">Ver tus publicaciones</button>
+    </Link>
 
             <button className="ver-comunidades">Ver tus comunidades</button>
           </div>
     </div>
   );
 };
-
 export default HomePage;

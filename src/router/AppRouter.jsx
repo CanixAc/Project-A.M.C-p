@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Registro from "../pages/Registro/Registro.jsx";
 import Publicaciones from "../pages/Publicaciones/Publicaciones.jsx";
+import MisPublic from '../pages/MisPublic/mispublic.jsx';
 
 import Perfil from "../pages/Perfil/Perfil.jsx";
 
@@ -19,6 +20,7 @@ function AppRouter() {
                 <Route path="/registro" element={<Registro />} />
                 <Route path="/publicaciones" element={<Publicaciones />} />
                 <Route path="/perfil" element={<Perfil />} />
+                <Route path="/mispublic" element={<MisPublic />} />
             </Routes>
             <Footer/>
         </BrowserRouter>

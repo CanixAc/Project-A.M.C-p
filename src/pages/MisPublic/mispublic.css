@@ -1,0 +1,109 @@
+.publicaciones-container {
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 150px; /* Espacio extra para que el footer no tape nada */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #55006e;
+    text-align: center;
+}
+
+/* Estilos del Formulario */
+.form-publicar {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid #e0e0e0;
+}
+
+.form-publicar h3 {
+    margin-top: 0;
+    color: #55006e;
+}
+
+.form-publicar input, 
+.form-publicar textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.btn-publicar {
+    background-color: #55006e;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-cancelar {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+/* Estilos de la Lista y Tarjetas */
+.lista-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: 6px solid #55006e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.post-acciones {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit, .btn-delete {
+    background: #f4f4f4;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-fecha {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.sin-publicaciones {
+    text-align: center;
+    padding: 60px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    color: #777;
+}
