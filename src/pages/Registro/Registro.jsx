@@ -35,8 +35,8 @@ const RegistroPage = () => {
   return (
     <div>
       
-      <h1> Regístrate!! </h1>
-      <p> Para poder crear, leer, actualizar y borrar tus propias publicaciones.</p>
+      <h1 className="registroTitulo">Regístrate!!</h1>
+      <p> Para poder crear, leer, actualizar y borrar tus propias publicaciones.</p> <br />
       
       <div className="registro">
         {/* Cambiamos el 'action' por nuestro 'onSubmit' */}
