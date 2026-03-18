@@ -38,7 +38,7 @@ const Publicaciones = () => {
       <h1 className="titulo">Publicaciones</h1>
       
       <div className="post-card">
-        <h3>Post de la comunidad</h3>
+        <h3>Posts</h3>
         <p>Contenido visible solo para usuarios logueados.</p>
       </div>
     </div>
