@@ -38,6 +38,7 @@ const Navbar = () => {
             <>
               <li><a href="/perfil">Perfil</a></li>
               <li><a href="/publicaciones">Ver las publicaciones de la comunidad</a></li>
+               <li><a href="/misComunidades">Mis comunidades</a></li>
             </>
           )}
         </ul>

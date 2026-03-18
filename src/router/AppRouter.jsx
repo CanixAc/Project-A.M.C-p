@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Footer.jsx";
 import Registro from "../pages/Registro/Registro.jsx";
 import Publicaciones from "../pages/Publicaciones/Publicaciones.jsx";
 import MisPublic from '../pages/MisPublic/mispublic.jsx';
-
+import MisComunidades from "../pages/MisComunidades/MisComunidades.jsx";
 import Perfil from "../pages/Perfil/Perfil.jsx";
 
 
@@ -21,6 +21,7 @@ function AppRouter() {
                 <Route path="/publicaciones" element={<Publicaciones />} />
                 <Route path="/perfil" element={<Perfil />} />
                 <Route path="/mispublic" element={<MisPublic />} />
+                <Route path="/MisComunidades" element={<MisComunidades />} />
             </Routes>
             <Footer/>
         </BrowserRouter>

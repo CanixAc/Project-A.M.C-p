@@ -3,6 +3,11 @@
     margin-top: 80px;
 }
 
+.titulo {
+    text-align: center;
+    padding-left: 70px;
+}
+
 .acceso-denegado {
     text-align: center;
     margin-top: 100px;

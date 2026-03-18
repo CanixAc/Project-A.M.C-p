@@ -24,10 +24,12 @@ const HomePage = () => {
           <Link to="/mis-publicaciones" className="ver-publicaciones-link">
         <button className="ver-publicaciones">Ver tus publicaciones</button>
     </Link>
+            <button className="ver-publicaciones">Ver tus publicaciones</button>
 
             <button className="ver-comunidades">Ver tus comunidades</button>
           </div>
     </div>
   );
 };
+
 export default HomePage;
