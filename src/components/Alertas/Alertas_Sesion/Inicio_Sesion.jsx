@@ -10,7 +10,7 @@ export const Alerta_Bien = async () => {
   });
 };
 
-export const Alerta_Mal = () => {
+export const Alerta_Mal = async () => {
   Swal.fire({
     title: 'Error',
     text: 'Usuario o contraseña incorrectos',

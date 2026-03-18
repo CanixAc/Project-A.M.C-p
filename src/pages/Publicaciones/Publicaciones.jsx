@@ -35,7 +35,6 @@ const Publicaciones = () => {
         Cerrar Sesión
       </button>
       
-      <h1>Publicaciones</h1>
       <h1 className="titulo">Publicaciones</h1>
       
       <div className="post-card">

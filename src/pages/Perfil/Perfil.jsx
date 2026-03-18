@@ -1,8 +1,9 @@
 import React from 'react';
 import './Perfil.css';
 import perfilImg from '../../assets/img/Perfil.png'; // Asegúrate de que la ruta sea correcta
+import { Link } from 'react-router-dom';
 
-const HomePage = () => {
+const Perfil = () => {
 
   const usuarioGuardado = JSON.parse(localStorage.getItem('usuarioRegistrado'));
 
@@ -21,15 +22,15 @@ const HomePage = () => {
         </div>
       </section>
           <div className="perfil-container">
-          <Link to="/mis-publicaciones" className="ver-publicaciones-link">
+          <Link to="/mispublic" className="ver-publicaciones-link">
         <button className="ver-publicaciones">Ver tus publicaciones</button>
-    </Link>
-            <button className="ver-publicaciones">Ver tus publicaciones</button>
-
-            <button className="ver-comunidades">Ver tus comunidades</button>
+          </Link>
+          <Link to="/MisComunidades" className="ver-comunidades-link">
+              <button className="ver-comunidades">Ver tus comunidades</button>
+          </Link>
           </div>
     </div>
   );
 };
 
-export default HomePage;
+export default Perfil;
