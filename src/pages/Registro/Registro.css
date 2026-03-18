@@ -7,10 +7,12 @@ label input {
     margin-right: 20px;
 }
 
+
 .registroTitulo {
     padding-top: 20px;
     text-align: center;
 }
+
 
 .registro {
     border: 1px solid #55006e;
@@ -32,4 +34,6 @@ label input {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 35px;
+
 }
+

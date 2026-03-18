@@ -5,7 +5,9 @@ import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Registro from "../pages/Registro/Registro.jsx";
 import Publicaciones from "../pages/Publicaciones/Publicaciones.jsx";
+
 import Perfil from "../pages/Perfil/Perfil.jsx";
+
 
 function AppRouter() {
     return (
@@ -16,7 +18,6 @@ function AppRouter() {
                 <Route path="/inicioSesion" element={<InicioSesion />} />
                 <Route path="/registro" element={<Registro />} />
                 <Route path="/publicaciones" element={<Publicaciones />} />
-                <Route path="/perfil" element={<Perfil />} />
             </Routes>
             <Footer/>
         </BrowserRouter>
