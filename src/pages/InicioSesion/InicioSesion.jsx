@@ -7,22 +7,25 @@ const LoginPage = () => {
   const [contrasena, setContrasena] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const usuarioGuardado = JSON.parse(localStorage.getItem('usuarioRegistrado'));
+ const handleSubmit = (e) => {
+  e.preventDefault();
+  const usuarioGuardado = JSON.parse(localStorage.getItem('usuarioRegistrado'));
 
-    if (usuarioGuardado && 
-       (identificador === usuarioGuardado.usuario || identificador === usuarioGuardado.correo) && 
-       contrasena === usuarioGuardado.contrasena) {
-      
-      localStorage.setItem('isLoggedIn', 'true'); 
-      alert("¡Iniciaste sesión con éxito!");
-      navigate('/'); 
-    } else {
-      alert("Datos incorrectos");
-    }
-  };
+  if (usuarioGuardado && 
+     (identificador === usuarioGuardado.usuario || identificador === usuarioGuardado.correo) && 
+     contrasena === usuarioGuardado.contrasena) {
+    
+    localStorage.setItem('isLoggedIn', 'true');
 
+    // 👇 FORZAR ACTUALIZACIÓN DE NAVBAR
+    window.dispatchEvent(new Event('storage'));
+
+    alert("¡Iniciaste sesión con éxito!");
+    navigate('/');
+  } else {
+    alert("Datos incorrectos");
+  }
+};
   return (
     <div style={{ textAlign: 'center', marginTop: '80px' }}>
       <h1>Inicia Sesión:</h1>

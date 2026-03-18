@@ -7,9 +7,14 @@ const Publicaciones = () => {
   const sesionActiva = localStorage.getItem('isLoggedIn') === 'true';
 
   const cerrarSesion = () => {
-    localStorage.removeItem('isLoggedIn');
-    navigate('/inicioSesion');
-  };
+  localStorage.removeItem('isLoggedIn');
+
+  // 👇 actualizar navbar
+  window.dispatchEvent(new Event('storage'));
+
+  alert("¡Has cerrado sesión!");
+  navigate('/');
+};
 
   if (!sesionActiva) {
     return (

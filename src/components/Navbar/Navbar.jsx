@@ -1,12 +1,25 @@
-import "./Navbar.css"
-import Logo from "../../assets/img/logo1.jpg"
-import { useEffect } from "react";
+import "./Navbar.css";
+import Logo from "../../assets/img/logo1.jpg";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const sesionActiva = localStorage.getItem('isLoggedIn') === 'true';
-    
+  const [sesionActiva, setSesionActiva] = useState(
+    localStorage.getItem('isLoggedIn') === 'true'
+  );
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setSesionActiva(localStorage.getItem('isLoggedIn') === 'true');
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
+
   return (
-    
     <header>
       <img src={Logo} alt="Logo de Project A.M.C" className="logo" />
 
@@ -20,17 +33,17 @@ const Navbar = () => {
               <li><a href="/publicaciones">Ver las publicaciones de la comunidad</a></li>
             </>
           )}
+
           {sesionActiva && (
             <>
-                <li><a href="/perfil">Perfil</a></li>
-                <li><a href="/publicaciones">Ver las publicaciones de la comunidad</a></li>
+              <li><a href="/perfil">Perfil</a></li>
+              <li><a href="/publicaciones">Ver las publicaciones de la comunidad</a></li>
             </>
           )}
         </ul>
       </nav>
     </header>
   );
-  
 };
 
 export default Navbar;

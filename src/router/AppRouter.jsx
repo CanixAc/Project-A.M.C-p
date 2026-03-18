@@ -18,6 +18,7 @@ function AppRouter() {
                 <Route path="/inicioSesion" element={<InicioSesion />} />
                 <Route path="/registro" element={<Registro />} />
                 <Route path="/publicaciones" element={<Publicaciones />} />
+                <Route path="/perfil" element={<Perfil />} />
             </Routes>
             <Footer/>
         </BrowserRouter>
